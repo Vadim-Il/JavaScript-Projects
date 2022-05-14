@@ -37,3 +37,10 @@ function My_First_Function() {                // Defining a function and giving 
     var result = str.fontcolor("green");            // Using a fontcolor method on str variable
     document.getElementById("Green_Text").innerHTML = result;          // Putting the value of result into HTML element with "Green_Text" id
 }
+
+function New_Event() {
+    var str = "This text is in uppercase!"
+    var result = str.toLocaleUpperCase()
+    document.getElementById("case").innerHTML = result
+
+}
