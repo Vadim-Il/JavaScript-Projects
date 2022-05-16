@@ -9,3 +9,16 @@ function conc_Function() {     // Defining a function and giving it a name
     begin += " and this is the end of sentence."        // Concatenate variable "begin" with end of string
     document.getElementById("concatenate").innerHTML = begin    // Putting the value of result into HTML element with "concatenate" id
 }
+
+function test_Function() {
+    var answer = "Brasilia"
+    var word = answer.toLocaleUpperCase()
+    document.getElementById("question").innerHTML = word
+}
+
+var multiple = own_Function(11, 7)
+document.getElementById("number").innerHTML = multiple
+
+function own_Function(a, b) {
+    return a * b
+}

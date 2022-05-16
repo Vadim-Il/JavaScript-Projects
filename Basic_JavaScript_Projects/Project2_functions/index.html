@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
+</head>
+
+<body>
+
+    <button onclick="button_function()" id="colored_text">This is a button</button>
+
+    <p id="colored_text">That paragraph is colored.</p>
+
+    <p id="concatenate" onclick="conc_Function()">CLICK</p>
+
+    <p>What is the capital of Brazil? (Hover <a id="question" onmouseover="test_Function()">HERE</a> to see the ansver.)
+    </p>
+
+    <br>
+    <p>The example below calls function which performs multiplication and gives us the answer.</p>
+    
+    <h4 id="number"></h4>
 
     <script src="./JS/main.js"></script>
-</head>
-<body>
-    
-<button onclick="button_function()" id="colored_text">This is a button</button>
-<p id="colored_text">That paragraph is colored.</p>
-<p id = "concatenate" onclick="conc_Function()">CLICK</p>
 </body>
+
 </html>
