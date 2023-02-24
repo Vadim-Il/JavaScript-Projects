@@ -33,12 +33,12 @@ function showSlides(n) {
     let dots = document.getElementsByClassName("dot");  //  Making 3 vars i, slides and dots;
     if (n > slides.length) {slideIndex = 1}  //  Sets that after 4th slide will be showed 1st slide;
     if (n < 1) {slideIndex = slides.length}  //  Sets that before 1st slide will be showed 4th slide;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    for (i = 0; i < slides.length; i++) {  //  Loops through each element in the slides;
+        slides[i].style.display = "none";  //  Sets display CSS property to none, hiding all slides;
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < dots.length; i++) {  //  Loops through each element in the dots;
+        dots[i].className = dots[i].className.replace(" active", "");  //  Removes active class from elements;
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    slides[slideIndex-1].style.display = "block";  //  Sets the display property to "block", which displays slide on the page;
+    dots[slideIndex-1].className += " active";  //  Adds the "active" class to the dot element that matches with that slide;
 }
